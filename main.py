@@ -18,14 +18,14 @@ size_blocks = 20
 screen = pygame.display.set_mode((size_blocks * count_blocks + MARGIN * count_blocks + 2 * count_blocks,
                                   size_blocks * count_blocks + MARGIN * count_blocks + header_margin + 2 * count_blocks))
 pygame.display.set_caption('Snake')
-pygame_icon = pygame.image.load('image/icon_game.jpg')
+pygame_icon = pygame.image.load('images/icon_game.jpg')
 pygame.display.set_icon(pygame_icon)
 font = pygame.font.SysFont('arial', 32)
 time = pygame.time.Clock()
 
 
 def my_menu():
-    img_menu = pygame.image.load('image/photo_menu.jpg')
+    img_menu = pygame.image.load('images/photo_menu.jpg')
 
     def exit_game():
         pygame.quit()
